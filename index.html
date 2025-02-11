@@ -1,40 +1,130 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Bookshelf APP</title>
-	<link href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css"
-	 rel="stylesheet"/>
-	<link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet"> 
-	<link rel="stylesheet" href="style.css"> 
+	<title>Dashboard</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div class="container"> 
-		<div class="header"> 
-			<h2>Dashboard</h2>
-			<div class="book-input"> </div> 
-			<input type="text" name="bookName" id="book_input" placeholder="enter name book">
-			<button type="button" id="searchBtn">
-				<i class="fa-regular fa-search"></i>Search
-		</div>
-		<ul> 
-			<li class="mb-4"><i class="fas fa-home"></i></li>
-			<li class="mb-4"><i class="fas fa-user"></i></li>
-			<li class="mb-4"><i class="fas fa-book"></i></li>
-			<li class="mb-4"> <i class="fas fa-star"></i></li>
-			<li class="mb-4"> <i class="fas fa-cog"></i></li>
-		</ul>
+	<div class="sidebar">
+		<img src="https://storage.googleapis.com/a1aa/image/Fz2mHwIaZfT31kP_MNF_MonEdueL67vndRAA3itV7gw.jpg" alt="Logo">
+		<i class="fas fa-home"></i>
+		<i class="fas fa-user active"></i>
+		<i class="fas fa-star"></i>
+		<i class="fas fa-cog"></i>
 	</div>
-	<!--main content-->
-	<div class="main-content"> 
-		<div class="header"> 
-			<div class="notifications"> 
-				<i class="fas fa-bell"></i>
+	<div class="main-content">
+		<div class="header">
+			<h1>Dashboard</h1>
+			<div class="search-bar">
+				<input type="text" placeholder="Search book, anything here">
+				<i class="fas fa-search"></i>
 			</div>
-			<div class="user-info"> 
-				<img src ="https://storage.googleapis.com/a1aa/image/0s7ck0NB5plp0MDzhjYyghBmHL-DGZdPAJuasPtD1ac.jpg" alt="User Avatar" class="rounded-full" width="40" height="40">
-                    <span class="ml-2">User</span>
+			<div class="user-info">
+				<img src="https://storage.googleapis.com/a1aa/image/uR5np8iWVz7olo6LgapjstUU0wbYbPzwupEfAoaHuzw.jpg" alt="User Avatar">
+				<span>Angelina Marr Valeria</span>
+			</div>
+		</div>
+		<div class="stats">
+			<div class="stat">
+				<div>
+					<h2>28,886</h2>
+					<p>Book Authors</p>
+				</div>
+				<span>+1280</span>
+			</div>
+			<div class="stat">
+				<div>
+					<h2>26,995</h2>
+					<p>Book Readers</p>
+				</div>
+				<span>+1082</span>
+			</div>
+			<div class="stat">
+				<div>
+					<h2>20,622</h2>
+					<p>Book Sharer</p>
+				</div>
+				<span>+1468</span>
+			</div>
+		</div>
+		<div class="popular-books">
+			<h2>Popular Book</h2>
+			<div class="books">
+				<div class="book">
+					<img src="https://storage.googleapis.com/a1aa/image/zHRE7ouRGpDPRzefNL2D-PswEInrE06Cb37_3H6Zr6c.jpg" alt="Can Have Fun">
+					<h3>Can Have Fun</h3>
+					<p>Emile De Fraud</p>
+				</div>
+				<div class="book">
+					<img src="https://storage.googleapis.com/a1aa/image/rjgwk1FD3IsJauDjuG0JKqrTjBjI7jRNU744k9svXAs.jpg" alt="Fight Love Hate">
+					<h3>Fight Love Hate</h3>
+					<p>Jackie William</p>
+				</div>
+				<div class="book">
+					<img src="https://storage.googleapis.com/a1aa/image/QRzXt-OADLHLs3ETium9FIMJ-Wm4QPhgVxAU1trUESE.jpg" alt="Calm & Don't Panic">
+					<h3>Calm & Don't Panic</h3>
+					<p>Roberto Alberts</p>
+				</div>
+				<div class="book">
+					<img src="https://storage.googleapis.com/a1aa/image/EOytz5DU_hFBfFcTHnZyAdTMdlP43k89U5AJBBYnhWY.jpg" alt="Candy Love">
+					<h3>Candy Love</h3>
+					<p>Marry Angelina</p>
+				</div>
+				<div class="book">
+					<img src="https://storage.googleapis.com/a1aa/image/mT1VD63OcrIc9dmeskHo5MsSOol2n8cMRFIn8YndIw4.jpg" alt="Hopeless Feel">
+					<h3>Hopeless Feel</h3>
+					<p>Sado Minamino</p>
+				</div>
+				<div class="book">
+					<img src="https://storage.googleapis.com/a1aa/image/LW7gGg-Mc2gAJMGS36684CXe7cMi0DYx9u_jdZu1UVI.jpg" alt="Thirty Nine Steps">
+					<h3>Thirty Nine Steps</h3>
+					<p>Monalisa Angel</p>
+				</div>
+				<div class="book">
+					<img src="https://storage.googleapis.com/a1aa/image/byExr0WyPUyHu78KS_FnPak8CoB_wuLxA91_1KSsMwI.jpg" alt="Create Sleep Repeat">
+					<h3>Create Sleep Repeat</h3>
+					<p>Hugo Gomes</p>
+				</div>
+				<div class="book">
+					<img src="https://storage.googleapis.com/a1aa/image/7ri74DhDzsELEw913dLs4CiF6mweSdxZ0u17zH67kwM.jpg" alt="Thirteen Number">
+					<h3>Thirteen Number</h3>
+					<p>Karim Benzema</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="right-sidebar">
+		<div class="subscribe">
+			Subscribe to Our Blog
+		</div>
+		<div class="community">
+			<h3>Join a community of over 5000 Book Lovers here now</h3>
+			<button>Join Now</button>
+		</div>
+		<div class="authors">
+			<h3>Book Authors</h3>
+			<div class="author">
+				<img src="https://storage.googleapis.com/a1aa/image/7_UPOeTW-h6A1deVk3PY67seb2JRVgEHb6nwq0tewdg.jpg" alt="Reinaldo Costa">
+				<div>
+					<h4>Reinaldo Costa</h4>
+					<p>Subukumi, Indonesia</p>
+				</div>
+			</div>
+			<div class="author">
+				<img src="https://storage.googleapis.com/a1aa/image/PEEdK5gHv42xNHcl5rJTLuAEm2wvM7DaM-of0JQRYm8.jpg" alt="Ahmad Gurano">
+				<div>
+					<h4>Ahmad Gurano</h4>
+					<p>Purbalingga, Indonesia</p>
+				</div>
+			</div>
+			<div class="author">
+				<img src="https://storage.googleapis.com/a1aa/image/11Y2kYofRL7dWdprBDpIGCJ_QC8gfy4-cqxg2-yOr1s.jpg" alt="Michele Angelina">
+				<div>
+					<h4>Michele Angelina</h4>
+					<p>Jakarta, Indonesia</p>
+				</div>
 			</div>
 		</div>
 	</div>
