@@ -1,0 +1,51 @@
+:root { 
+	--bg-color1:#212529;
+	--bg-color2:#2a2b2d; 
+}
+* { 
+	box-sizing: border-box; 
+	margin: 0; 
+	padding: 0;
+}
+
+body { 
+	min-height: 100vh; 
+	background-color: var(--bg-color1); // color for background 
+	color:#fff; 
+	font-family: Arial, sans-serif; 
+	padding: 0 15px;
+}
+hr { 
+	margin-bottom: 10px;
+}
+.head { 
+	position: sticky; 
+	top: 0; 
+	background-color: var(--bg-color1); 
+	display: flex; 
+	justify-content: space-between; 
+	align-items: center; 
+	margin-bottom: 10px; 
+	padding: 15px 0; 
+}
+.book-input { 
+	align-items: center; 
+	display: flex; 
+}
+#book_input { 
+	background-color: var(--bg-color2);
+	border: none;
+	padding: 12px; 
+	font-size: 14px; 
+	border-radius: 80px; 
+	color: #fff;
+}
+#searchBtn { 
+	border: none; 
+	font-size: 16px; 
+	padding: 12px; 
+	border-radius: 25px; 
+	cursor: pointer; 
+	margin-left: 10px; 
+	background-color: #fff; 
+}
